@@ -12,3 +12,12 @@ class ExampleResource {
     @Produces(MediaType.TEXT_PLAIN)
     fun hello() = "hello"
 }
+
+
+@Path("/ping")
+class Ping {
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    fun ping() = "ping"
+}
